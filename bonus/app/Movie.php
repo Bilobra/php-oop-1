@@ -12,7 +12,7 @@ class Movie {
     function __construct($poster,$title,$genre,$duration,$year){
         $this->poster = $poster;
         $this->title = $title;
-        $this->year = $year;
+        $this->setYear($year);
         $this->genre = $genre;
         $this->duration = $duration;
     }
@@ -24,5 +24,6 @@ class Movie {
           $this->year = 'Anno non specificato';
         }
     }
+
 
 }
